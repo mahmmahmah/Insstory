@@ -1,0 +1,88 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/main"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/body"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<de.hdodenhof.circleimageview.CircleImageView
+				android:id="@+id/avatar"
+				android:layout_width="48dp"
+				android:layout_height="48dp"
+				android:src="@drawable/baseline_account_circle_black_48dp"
+				app:civ_border_width="0dp"
+				app:civ_border_color="#008DCD"
+				app:civ_circle_background_color="#00000000"
+				app:civ_border_overlay="true" />
+			<TextView
+				android:id="@+id/username"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="Username"
+				android:textSize="16sp"
+				android:textColor="#000000" />
+			<ImageView
+				android:id="@+id/verified"
+				android:focusable="false"
+				android:layout_width="13dp"
+				android:layout_height="13dp"
+				android:layout_marginLeft="2dp"
+				android:src="@drawable/blue_verified"
+				android:scaleType="fitCenter" />
+			<LinearLayout
+				android:id="@+id/space"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:orientation="vertical"
+				android:layout_weight="1" />
+			<ImageView
+				android:id="@+id/reject"
+				android:focusable="false"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:background="#F44336"
+				android:src="@drawable/ic_close_white"
+				android:scaleType="center" />
+			<ImageView
+				android:id="@+id/accept"
+				android:focusable="false"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_marginLeft="8dp"
+				android:background="#4CAF50"
+				android:src="@drawable/ic_check_white"
+				android:scaleType="center" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear6"
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:background="@android:color/transparent"
+			android:gravity="right"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:id="@+id/linear7"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginLeft="60dp"
+				android:padding="8dp"
+				android:background="#E0E0E0"
+				android:orientation="horizontal" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

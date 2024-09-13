@@ -1,0 +1,87 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/body"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFFFFF"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/top"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:orientation="vertical" />
+		<LinearLayout
+			android:id="@+id/medium"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical"
+			android:layout_weight="1">
+			<de.hdodenhof.circleimageview.CircleImageView
+				android:id="@+id/icon_"
+				android:layout_width="80dp"
+				android:layout_height="80dp"
+				android:src="@drawable/round_signal_wifi_statusbar_connected_no_internet_4_black_48dp"
+				app:civ_border_width="0dp"
+				app:civ_border_color="#008DCD"
+				app:civ_circle_background_color="#00000000"
+				app:civ_border_overlay="true" />
+			<TextView
+				android:id="@+id/title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginRight="20dp"
+				android:padding="8dp"
+				android:gravity="center_horizontal"
+				android:text="No Internet connection! Please make sure you are connected to the Internet and try again."
+				android:textSize="18sp"
+				android:textColor="#000000" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/bottom"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/try_again"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="14dp"
+				android:layout_marginTop="14dp"
+				android:layout_marginRight="14dp"
+				android:layout_marginBottom="8dp"
+				android:padding="14dp"
+				android:background="#651FFF"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="Try Again"
+				android:textSize="16sp"
+				android:textColor="#FFFFFF" />
+			<TextView
+				android:id="@+id/exit"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="14dp"
+				android:layout_marginRight="14dp"
+				android:layout_marginBottom="14dp"
+				android:padding="14dp"
+				android:background="#FFFFFF"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="Close App"
+				android:textSize="16sp"
+				android:textColor="#651FFF" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/body"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#FFFFFF"
+		android:orientation="vertical"
+		android:layout_weight="1">
+		<LinearLayout
+			android:id="@+id/bg"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_weight="1">
+			<LinearLayout
+				android:id="@+id/main"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<com.airbnb.lottie.LottieAnimationView
+					android:id="@+id/lottie1"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:padding="8dp"
+					android:scaleType="fitCenter"
+					android:layout_centerInParent="true"
+					app:lottie_fileName="91955-social-media-network.json"
+					app:lottie_loop="true"
+					app:lottie_autoPlay="true" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/bottom"
+				android:layout_width="match_parent"
+				android:layout_height="175dp"
+				android:padding="8dp"
+				android:orientation="vertical">
+				<Button
+					android:id="@+id/login_button"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="16dp"
+					android:layout_marginTop="8dp"
+					android:layout_marginRight="16dp"
+					android:layout_marginBottom="8dp"
+					android:padding="8dp"
+					android:background="#FFFFFF"
+					android:text="LOGIN"
+					android:textSize="14sp"
+					android:textColor="#F4511E" />
+				<Button
+					android:id="@+id/register_button"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="16dp"
+					android:layout_marginRight="16dp"
+					android:layout_marginBottom="8dp"
+					android:padding="8dp"
+					android:background="#F4511E"
+					android:text="Create Account"
+					android:textSize="14sp"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

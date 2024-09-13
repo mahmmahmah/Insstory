@@ -1,0 +1,93 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/body"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFFFFF"
+		android:gravity="center_vertical"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/medium"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical"
+			android:layout_weight="1">
+			<LinearLayout
+				android:id="@+id/body_"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="14dp"
+				android:layout_marginRight="14dp"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical">
+				<ImageView
+					android:id="@+id/image"
+					android:layout_width="70dp"
+					android:layout_height="70dp"
+					android:layout_marginBottom="14dp"
+					android:src="@drawable/banned"
+					android:scaleType="fitCenter" />
+				<TextView
+					android:id="@+id/title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="You are banned"
+					android:textSize="18sp"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+					android:gravity="center_vertical"
+					android:text="Dear User, we have received many reports about you! We've checked these reports and confirmed that they don't follow our community guidelines. We strive to provide a safe environment for everyone!"
+					android:textSize="16sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/bottom"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/create_request_button"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="14dp"
+				android:layout_marginTop="14dp"
+				android:layout_marginRight="14dp"
+				android:layout_marginBottom="8dp"
+				android:padding="14dp"
+				android:background="#651FFF"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="Create Request"
+				android:textSize="16sp"
+				android:textColor="#FFFFFF" />
+			<TextView
+				android:id="@+id/more_info_button"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="14dp"
+				android:layout_marginRight="14dp"
+				android:layout_marginBottom="14dp"
+				android:padding="14dp"
+				android:background="#FFFFFF"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="More Info"
+				android:textSize="16sp"
+				android:textColor="#651FFF" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

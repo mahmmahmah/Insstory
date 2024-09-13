@@ -1,0 +1,106 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/body"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:background="#FFFFFF"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/slider"
+			android:layout_width="60dp"
+			android:layout_height="5dp"
+			android:layout_marginBottom="8dp"
+			android:background="#424242"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical" />
+		<LinearLayout
+			android:id="@+id/settings_lay"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="#FFFFFF"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<ImageView
+				android:id="@+id/settings_icon"
+				android:focusable="false"
+				android:layout_width="38dp"
+				android:layout_height="38dp"
+				android:layout_marginRight="6dp"
+				android:padding="8dp"
+				android:src="@drawable/settings"
+				android:scaleType="centerInside" />
+			<TextView
+				android:id="@+id/settings_title"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Settings"
+				android:textSize="18sp"
+				android:textColor="#000000" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/report_lay"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="#FFFFFF"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<ImageView
+				android:id="@+id/report_icon"
+				android:focusable="false"
+				android:layout_width="38dp"
+				android:layout_height="38dp"
+				android:layout_marginRight="6dp"
+				android:padding="8dp"
+				android:src="@drawable/report"
+				android:scaleType="centerInside" />
+			<TextView
+				android:id="@+id/report_title"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Report"
+				android:textSize="18sp"
+				android:textColor="#000000" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/profileurl_lay"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="#FFFFFF"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<ImageView
+				android:id="@+id/profileurl_icon"
+				android:focusable="false"
+				android:layout_width="38dp"
+				android:layout_height="38dp"
+				android:layout_marginRight="6dp"
+				android:padding="8dp"
+				android:src="@drawable/copy_link"
+				android:scaleType="centerInside" />
+			<TextView
+				android:id="@+id/profileurl_title"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Share Profile"
+				android:textSize="18sp"
+				android:textColor="#000000" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

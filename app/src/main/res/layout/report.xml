@@ -1,0 +1,45 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#E0E0E0"
+		android:orientation="vertical">
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/recyclerview1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="#FFFFFF" />
+		<LinearLayout
+			android:id="@+id/no_messages_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="#FFFFFF"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical"
+			android:layout_weight="1">
+			<TextView
+				android:id="@+id/no_messages_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="No Report users yet!"
+				android:textSize="20sp"
+				android:textColor="#000000" />
+			<TextView
+				android:id="@+id/no_messages_subtitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Reported from users will show here!"
+				android:textSize="14sp"
+				android:textColor="#000000" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

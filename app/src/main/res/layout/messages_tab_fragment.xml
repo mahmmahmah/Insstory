@@ -1,0 +1,36 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/messages"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1" />
+	<LinearLayout
+		android:id="@+id/no_messages_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical"
+		android:layout_weight="1">
+		<TextView
+			android:id="@+id/no_messages_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="No messages yet!"
+			android:textSize="20sp"
+			android:textColor="#000000" />
+		<TextView
+			android:id="@+id/no_messages_subtitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Meet new people from the community!"
+			android:textSize="14sp"
+			android:textColor="#000000" />
+	</LinearLayout>
+</LinearLayout>

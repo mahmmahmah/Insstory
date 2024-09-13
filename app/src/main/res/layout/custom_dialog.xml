@@ -1,0 +1,92 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/body"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical">
+		<androidx.cardview.widget.CardView
+			android:id="@+id/dialog_bg"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#FFFFFF"
+			android:orientation="vertical"
+			app:cardElevation="0dp"
+			app:cardCornerRadius="15dp">
+			<LinearLayout
+				android:id="@+id/dialog_main"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/top"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/title"
+						android:focusable="false"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Dialog Title"
+						android:textSize="20sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<TextView
+					android:id="@+id/text"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Dialog Message"
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<LinearLayout
+					android:id="@+id/bottom"
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:gravity="right|center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/no"
+						android:focusable="false"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginRight="8dp"
+						android:paddingLeft="20dp"
+						android:paddingTop="8dp"
+						android:paddingRight="20dp"
+						android:paddingBottom="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="No"
+						android:textSize="14sp"
+						android:textColor="#F44336" />
+					<TextView
+						android:id="@+id/yes"
+						android:focusable="false"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginRight="8dp"
+						android:paddingLeft="20dp"
+						android:paddingTop="8dp"
+						android:paddingRight="20dp"
+						android:paddingBottom="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="Yes"
+						android:textSize="14sp"
+						android:textColor="#673AB7" />
+				</LinearLayout>
+			</LinearLayout>
+		</androidx.cardview.widget.CardView>
+	</LinearLayout>
+</LinearLayout>

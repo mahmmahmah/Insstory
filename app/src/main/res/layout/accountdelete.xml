@@ -1,0 +1,122 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/body"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFFFFF"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+		<androidx.cardview.widget.CardView
+			android:id="@+id/top_view"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			app:cardElevation="5dp"
+			app:cardCornerRadius="0dp">
+			<LinearLayout
+				android:id="@+id/top"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:padding="8dp"
+				android:background="#651FFF"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:text="Delete account"
+					android:textSize="18sp"
+					android:textColor="#FFFFFF"
+					android:layout_weight="1" />
+			</LinearLayout>
+		</androidx.cardview.widget.CardView>
+		<LinearLayout
+			android:id="@+id/main"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/up"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="vertical" />
+			<LinearLayout
+				android:id="@+id/medium"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<LinearLayout
+					android:id="@+id/body_"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dp"
+					android:layout_marginRight="15dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="vertical">
+					<ImageView
+						android:id="@+id/warning_icon"
+						android:layout_width="70dp"
+						android:layout_height="70dp"
+						android:src="@drawable/warning"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/warning_text"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="We don't know why you're deleting your account, but we're giving you one more option! You can suspend your account if you wish. When you suspend your account, your posts, people you've talked to, and more won't be deleted, but they won't be able to see your account in searches and elsewhere."
+						android:textSize="16sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/bottom"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="bottom"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/suspend_account_button"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="14dp"
+					android:layout_marginTop="8dp"
+					android:layout_marginRight="14dp"
+					android:layout_marginBottom="8dp"
+					android:padding="14dp"
+					android:background="#651FFF"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="Suspend Account"
+					android:textSize="16sp"
+					android:textColor="#FFFFFF" />
+				<TextView
+					android:id="@+id/delete_account_button"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="14dp"
+					android:layout_marginRight="14dp"
+					android:layout_marginBottom="8dp"
+					android:padding="14dp"
+					android:background="#FFFFFF"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="Delete Account"
+					android:textSize="16sp"
+					android:textColor="#F44336" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
